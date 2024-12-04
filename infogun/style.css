@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(238, 220, 220);
+    font-size: 1rem; /* Base font size for responsive typography */
+    padding-top: 80px; /* Add top padding to prevent content from being hidden under the navbar */
+    
+}
+.hero {
+    height: 300px; /* Fixed height for hero section */
+    background-image: url('image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 200px; /* Adjust height for mobile */
+    }
+}
+.clickable-image {
+    cursor: pointer;
+    transition: transform 0.2s; /* Animation for hover effect */
+    margin-bottom: 15px; /* Space between images */
+    width: 100%; /* Full width of column */
+    height: 250px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the space without distortion */
+}
+.clickable-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.description {
+    display: none; /* Initially hide the description */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for description */
+}
+.description-box {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-link {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.service-link:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
